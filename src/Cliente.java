@@ -31,7 +31,7 @@ public class Cliente {
 
     //Funcionalidad
     public void suscribirse(Suscripcion pSuscripcion){
-        System.out.println("•" + nombre + " adquirió una suscripción " + pSuscripcion.getPeriodicidad());
+        System.out.println("•" + nombre + " adquirió una suscripción " + pSuscripcion.getPeriodicidad() + "\n");
     }
 
     //Getters

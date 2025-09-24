@@ -35,6 +35,12 @@ public class Main {
         System.out.println(cliente2);
 
         Cliente cliente3 = new Cliente();
+
+        Cliente cliente4 = new Cliente("Lola",
+                "Aguirre Cerdas",
+                "122345567",
+                "Belén, Heredia");
+
         System.out.println(cliente3);
 
         //Crear suscripciones
@@ -69,5 +75,17 @@ public class Main {
         cliente1.suscribirse(suscripcion1);
         cliente2.suscribirse(suscripcion2);
         cliente3.suscribirse(new Suscripcion ("Adds Free", 2500,"Mensual"));
+
+        if (cliente1.equals(cliente2)){
+            System.out.println("Son la misma persona");
+        } else{
+            System.out.println("No son la misma persona");
+        }
+
+        if (cliente1.equals(cliente4)){
+            System.out.println("Son la misma persona");
+        } else{
+            System.out.println("No son la misma persona");
+        }
     }
 }
